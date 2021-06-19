@@ -97,6 +97,8 @@ function Hola(){
         alert("La máquina gana");
     }else if (resultado == maquinaResult){
         alert("Empate");
+    }else if ((resultado > 21) && (maquinaResult > 21)){
+        alert("Ambos pierden")
     }
     //volver a jugar?
     let jugar = confirm("¿Quieres jugar otra vez?");
