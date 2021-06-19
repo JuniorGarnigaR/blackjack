@@ -17,11 +17,13 @@
             user1 = Math.random()*100;
         }
         alert(Math.round(user1));
+        user1 = Math.round(user1);
         var user2 = Math.random()*100;
         while((user2 > 11) || (user2 < 1)){
             user2 = Math.random()*100;
         }
         alert(Math.round(user2));
+        user2 = Math.round(user2);
 
         var resultado = user1 + user2;
 
@@ -34,6 +36,7 @@
                 user3 = Math.random()*100;
             }
             alert(Math.round(user3));
+            user3 = Math.round(user3);
         }else{
             alert("Resultado: "+ Math.round(resultado));
         }
@@ -48,6 +51,7 @@
                         user4 = Math.random()*100;
                     }
                     alert(Math.round(user4));
+                    user4 = Math.round(user4);
                     resultado = user1+user2+user3+user4;
                     alert("Resultado: "+ Math.round(resultado));
                 }else if(anwser2 == false){
@@ -66,12 +70,14 @@
             maquina1 = Math.random()*100;
         }
         alert(Math.round(maquina1));
+        maquina1 = Math.round(maquina1);
 
         var maquina2 = Math.random()*100;
         while((maquina2 > 11) || (maquina2 < 1)){
             maquina2 = Math.random()*100;
         }
         alert(Math.round(maquina2));
+        maquina2 = Math.round(maquina2);
 
         var maquinaResult = maquina1 + maquina2;
 
@@ -81,6 +87,7 @@
                 maquina3 = Math.random()*100;
             }
             alert(Math.round(maquina3));
+            maquina3 = Math.round(maquina3);
             maquinaResult = maquina1+maquina2+maquina3;
         }else if (maquinaResult >= 18){
             alert(Math.round("Resultado: "+Math.round(maquinaResult)));
@@ -91,6 +98,7 @@
                 maquina4 = Math.random()*100;
             }
             alert(Math.round(maquina4));
+            maquina4 = Math.round(maquina4);
             maquinaResult = maquina1+maquina2+maquina3+maquina4;
             alert("Resultado: "+ Math.round(maquinaResult));
         }else if (maquinaResult > 18){
