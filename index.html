@@ -108,14 +108,18 @@
 
     //If para resultado
         if ((resultado < 22) && (maquinaResult < 22)){
-                if (resultado != maquinaResult ){
+                if (resultado > 21){
+                    alert("La máquina ha ganado");
+                }else if (maquinaResult > 21){
+                    alert("Tú has ganado");
+                }else{
                     if (resultado > maquinaResult){
-                        alert("Has ganado");
+                        alert("Tú has ganado");
                     }else if (resultado < maquinaResult){
                         alert("La máquina ha ganado");
+                    }else if (resultado == maquinaResult){
+                        alert("Empate");
                     }
-                }else if (resultado == maquinaResult){
-                    alert("Empate")
                 }
             }else if ((resultado > 21) && (maquinaResult > 21)){
                 alert("Ambos pierden");
