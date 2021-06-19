@@ -119,8 +119,16 @@
                 }
         }else if ((resultado > 21) && (maquinaResult > 21)){
             alert("Ambos pierden");
+        }else if ((resultado > 21) || (maquinaResult > 21)){
+            if (resultado > 21){
+                alert("La máquina ha ganado");
+            }else if (maquinaResult > 21){
+                alert("Tú has ganado");
+            }
         }
-
+            
+            
+            
         let jugar = confirm("¿Quieres jugar otra vez?");
         if (jugar == true){
             inicio();
