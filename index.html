@@ -82,6 +82,7 @@
         var maquinaResult = maquina1 + maquina2;
 
         if (maquinaResult < 18){
+            var entrada = true;
             var maquina3 = Math.random()*100;
             while ((maquina3 > 11) || (maquina3 < 1)){
                 maquina3 = Math.random()*100;
@@ -101,7 +102,7 @@
             maquina4 = Math.round(maquina4);
             maquinaResult = maquina1+maquina2+maquina3+maquina4;
             alert("Resultado: "+ Math.round(maquinaResult));
-        }else if (maquinaResult > 18){
+        }else if ((maquinaResult > 18) && (entrada == true)){
             maquinaResult = maquina1+maquina2+maquina3;
             alert("Resultado: " + Math.round(maquinaResult));
         }
