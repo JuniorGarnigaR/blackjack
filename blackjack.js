@@ -95,6 +95,8 @@ function Hola(){
         alert("Tú ganas");
     }else if (maquinaResult > resultado){
         alert("La máquina gana");
+    }else if (resultado == maquinaResult){
+        alert("Empate");
     }
     //volver a jugar?
     let jugar = confirm("¿Quieres jugar otra vez?");
