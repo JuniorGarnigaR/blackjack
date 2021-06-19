@@ -108,6 +108,10 @@
             alert("Tú ganas");
         }else if (maquinaResult > resultado){
             alert("La máquina gana");
+        }else if (resultado == maquinaResult){
+            alert("Empate");
+        }else if ((resultado > 21) && (maquinaResult > 21)){
+            alert("Ambos pierden")
         }
 
         let jugar = confirm("¿Quieres jugar otra vez?");
