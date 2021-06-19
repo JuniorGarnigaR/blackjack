@@ -96,5 +96,12 @@ function Hola(){
     }else if (maquinaResult > resultado){
         alert("La máquina gana");
     }
+    //volver a jugar?
+    let jugar = confirm("¿Quieres jugar otra vez?");
+        if (jugar == true){
+            Hola();
+        }else{
+            alert("Adiós");
+        }
 
 }
