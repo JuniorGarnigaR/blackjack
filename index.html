@@ -110,14 +110,14 @@
         if ((resultado < 22) && (maquinaResult < 22)){
                 if (resultado == maquinaResult){
                     alert("Empate");
-                }else if (resultado > maquinaResult){
-                    alert("Tú has ganado");
-                }else if (resultado < maquinaResult){
-                    alert("La máquina ha ganado");
+                }else{
+                    if (resultado > maquinaResult){
+                        alert("Tú has ganado");
+                    }else if (resultado < maquinaResult){
+                        alert("La máquina ha ganado");
+                    }
                 }
-            }else if ((resultado > 21) && (maquinaResult > 21)){
-                alert("Ambos pierden");
-            }
+
 
         let jugar = confirm("¿Quieres jugar otra vez?");
         if (jugar == true){
