@@ -108,9 +108,9 @@
 
     //If para resultado
 
-        if (maquinaResult > 21){
+        if (maquinaResult >= 22){
             alert("Tú ganas");
-        }else if(resultado > 21){
+        }else if(resultado >= 22){
             alert("La máquina gana");
         }else if (resultado > maquinaResult){
             alert("Tú ganas");
@@ -118,7 +118,7 @@
             alert("La máquina gana");
         }else if (resultado == maquinaResult){
             alert("Empate");
-        }else if ((resultado > 21) && (maquinaResult > 21)){
+        }else if ((resultado >= 22) && (maquinaResult >= 22)){
             alert("Ambos pierden")
         }
 
