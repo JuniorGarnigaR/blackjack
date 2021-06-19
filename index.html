@@ -107,8 +107,9 @@
         }
 
     //If para resultado
-
-        if (maquinaResult >= 22){
+        if ((resultado >= 22) && (maquinaResult >= 22)){
+            alert("Ambos pierden")
+        }else if (maquinaResult >= 22){
             alert("Tú ganas");
         }else if(resultado >= 22){
             alert("La máquina gana");
@@ -118,8 +119,6 @@
             alert("La máquina gana");
         }else if (resultado == maquinaResult){
             alert("Empate");
-        }else if ((resultado >= 22) && (maquinaResult >= 22)){
-            alert("Ambos pierden")
         }
 
         let jugar = confirm("¿Quieres jugar otra vez?");
