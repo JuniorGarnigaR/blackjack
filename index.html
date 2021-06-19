@@ -8,10 +8,10 @@
 </head>
 <body>
     
-    <button onclick="startGame()">Iniciar BlackJack</button>    
+    <button onclick="inicio()">Iniciar BlackJack</button>    
     
     <script>
-        function startGame(){
+        function inicio(){
         var user1 = Math.random()*100;
         while ((user1 > 11) || (user1 < 1)){
             user1 = Math.random()*100;
@@ -121,8 +121,8 @@
 
         let jugar = confirm("¿Quieres jugar otra vez?");
         if (jugar == true){
-            startGame();
-        }else{
+            inicio();
+        }else (jugar == false){
             alert("Adiós");
         }
         }
